@@ -1,0 +1,6 @@
+.ionide
+.vscode
+__pycache__
+bin
+obj
+.vs
