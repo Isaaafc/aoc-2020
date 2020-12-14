@@ -15,11 +15,9 @@ if __name__ == '__main__':
     p, t = 1, 0
 
     for b, dt in bus_times:
-        while True:
-            if (dt + t) % b == 0:
-                break
-
+        while (dt + t) % b != 0:
             t += p
+
         p *= b
 
     print(t)
